@@ -2,6 +2,7 @@ body{
     background-image: url(BG.jpg);
     background-size: cover;
     background-position-x: center;
+    background-position-y: center;
 }
 
 @font-face {
@@ -11,8 +12,8 @@ body{
 
 #count{
     font-family: countdown;
-    margin-top: 57vh;
-    font-size: 5.5vh;
+    margin-top: 54vh;
+    font-size: 5vh;
     text-align: center;
     color: red;
     animation: flicker 1.5s infinite alternate; 

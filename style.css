@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
     background-color: black;
 }
@@ -34,41 +33,4 @@ body{
     20%, 24%, 55% {        
         text-shadow: none;
     }    
-=======
-body{
-    background-color: black;
-}
-
-@font-face {
-    font-family: countdown;
-    src: url(Technology-Bold.ttf);
-}
-
-#count{
-    font-family: countdown;
-    margin-top: 46vh;
-    font-size: 8vh;
-    text-align: center;
-    color: red;
-    animation: flicker 1.5s infinite alternate; 
-}
-
-@keyframes flicker {
-    
-    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-      
-        text-shadow:
-            0 0 1rem brown,
-            0 0 1rem brown,
-            0 0 2rem brown,
-            0 0 4rem brown,
-            0 0 2rem brown,
-            0 0 4rem brown,
-            0 0 1rem brown;      
-    }
-    
-    20%, 24%, 55% {        
-        text-shadow: none;
-    }    
->>>>>>> 8a6c933ffaa33265ed6028f16f2481f2f32454f4
 }

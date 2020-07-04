@@ -1,15 +1,27 @@
 body{
-    /* background-image: url(BG.jpg);
+    background-image: url(BG.jpg);
     background-size: cover;
     background-position-x: center;
-    background-position-y: center; */
-    background-color: black;
+    background-position-y: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+p{
+    color: white;
+    text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    font-size: 3vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @font-face {
     font-family: countdown;
     src: url(Technology-Bold.ttf);
 }
+
 
 #count{
     font-family: countdown;
@@ -20,19 +32,30 @@ body{
     animation: flicker 1.5s infinite alternate; 
 }
 
-#text{
-    font-family: countdown;
-    margin-top: 5vh;
-    font-size: 3vh;
+.cover{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
     text-align: center;
-    color: red;
 }
 
-p{
+#p2{
+    background-image: linear-gradient(to bottom right, rgba(89, 0, 255, 0.8), rgba(255, 0, 200, 0.6));
+}
+
+#playbutton{
+    margin-left: 44vw;
+    height: 12vw;
+    width: 12vw;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50%;
     text-align: center;
-    color: wheat;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vh;
+}
+
+i{
+    padding: 3vw ;
+    color: white;
+    font-size: 6vw;
 }
 
 @keyframes flicker {

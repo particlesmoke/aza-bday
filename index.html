@@ -1,22 +1,57 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>AZA</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
+        <script src="https://kit.fontawesome.com/6b538896b2.js" crossorigin="anonymous"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141142422-4"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-141142422-4');
         </script>
 
     </head>
     <body>
-        <p id="count">!!!</p>
+        <div class="cover">
+            <p id="count">!!!</p>
+            <i class="fas fa-arrow-circle-down" style="color: orange;"></i>
+        </div>
+        <div id="fullpage">
+            <div class="section active" id="p1"></div>
+            <div class="section" id="p2">
+                <audio id="player">
+                    <source src="./29D/I wanna fly repeat_mixdown.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+                  <div id="playbutton" onclick="playmusic()"><i id="button" class="fas fa-play"></i></div>
+                  <p> This is a song I listen to when I am feeling low... *weak smile* </p>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <hr>
+                  <p> This is embarassing, but things are taking time, I am continuously refurbishing. <br> I know tu hi hai but that's even more reason to make this perfect. </p>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="fullpage.min.js"></script>
         <script src="script.js"></script>
-        <p id="text">Under Maintenance, visit again soon</p>
-        <p>Gunnight. Love you. 😘</p>
+        
+        <script type="text/javascript">
+         new fullpage('#fullpage', {
+    	//options here
+	    autoScrolling:true,
+	    scrollHorizontally: true
+        });
+
+        </script>
     </body>
 </html>

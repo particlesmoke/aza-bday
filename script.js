@@ -22,3 +22,17 @@ if (distance < 0) {
 
 }, 1000);
 
+player = document.getElementById("player"); 
+function playmusic()  
+{  
+    if (player.paused)
+    {
+        player.play();  
+        document.getElementById("button").className = "fas fa-pause";
+    }
+    else
+    {
+        player.pause();
+        document.getElementById("button").className = "fas fa-play";
+    }
+}  

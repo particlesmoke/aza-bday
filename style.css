@@ -1,8 +1,9 @@
 body{
-    background-image: url(BG.jpg);
+    /* background-image: url(BG.jpg);
     background-size: cover;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: center; */
+    background-color: black;
 }
 
 @font-face {
@@ -17,6 +18,14 @@ body{
     text-align: center;
     color: red;
     animation: flicker 1.5s infinite alternate; 
+}
+
+#text{
+    font-family: countdown;
+    margin-top: 5vh;
+    font-size: 3vh;
+    text-align: center;
+    color: red;
 }
 
 @keyframes flicker {

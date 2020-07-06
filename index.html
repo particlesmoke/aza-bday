@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="theme-color" content="#db5945">
         <title>AZA</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
@@ -18,7 +19,7 @@
     <body>
         <div class="cover">
             <p id="count">!!!</p>
-            <i class="fas fa-arrow-circle-down" style="color: orange;"></i>
+            <a href="#page2" class="links"><i class="fas fa-arrow-circle-down" style="color: orange;"></i></a>
             <br>
             <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black;"> . </p>
             <br> <br> <br>
@@ -50,7 +51,7 @@
         <script src="script.js"></script>
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-            
+                anchors: ['page1', 'page2']
             });
         </script>
     </body>

@@ -15,7 +15,7 @@ var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 if(hours<=1 || hours>=18){
     document.body.style.backgroundImage = "url(BGn.jpg)";
-    document.getElementById("p2").style.backgroundImage = "linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651))";
+    document.getElementById("p2").style.backgroundImage = "linear-gradient(to bottom right, rgba(10, 100, 150, 0.87), rgba(27, 0, 100, 0.651))";
 }
 else if(hours<=19 && hours>=13){
     document.body.style.backgroundImage = "url(BGm.jpg)";

@@ -1,5 +1,5 @@
 body{
-    background-image: url(BG.jpg);
+    /* background-image: url(BG.jpg); */
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
@@ -40,7 +40,7 @@ p{
 }
 
 #p2{
-    background-image: linear-gradient(to bottom right, rgba(89, 0, 255, 0.8), rgba(255, 0, 200, 0.6));
+    /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651)); */
 }
 
 #playbutton{

@@ -22,28 +22,29 @@
             <a href="#page2" class="links"></a><i class="fas fa-arrow-circle-down" style="color: orange;"></i></a>
             <br>
             <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black;"> Night night. Rain tom : ) </p>
-            <br> <br> <br>
-            I hope you know you have to scroll
         </div>
         <div id="fullpage">
             <div class="section active"></div>
             <div class="section" id="p2">
-                <audio id="player">
-                    <source src="./28D/Audio.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                  </audio>
-                  <div id="playbutton" onclick="playmusic()"><i id="button" class="fas fa-play"></i></div>
-                  <p>Another one of those songs that has got me through a lot of difficult times. Hope you like it.</p>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <hr>
-                  <p style="font-size: 2vh;"> Time based looks on : ) (Visit at different times to notice.) Be good kiddo. Love you. </p>
-
+                <div class="slide">
+                    <h1>A table just for 2</h1>
+                    <img src="./27D/Table.png" style="width: 75vw; margin-left: 10vw; padding: 2vw; margin-top: -10vh;">
+                    <audio id="player" preload="auto">
+                        <source src="./27D/Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div id="playbutton" onclick="playmusic()"><i id="button" class="fas fa-play"></i></div>
+                    <p>This song reminds me of you, or rather I listen to it to smile remembering you 😁</p>
+                    <br> <br> <br> <br> <br> <br> <br>
+                     <hr style="border: 5px solid;"> 
+                     <br><br>
+                    <p style="font-size: 2vh;"> Time based looks on : ) (Visit at different times to notice.) Be good kiddo. Love you. </p>
+                </div>  
+                <div class="slide">
+                    <img src="./27D/Hey kiddo.png" style="position: absolute; right: 55vw; top: 10vh; height: 6vh;">
+                    <p>Blah blah</p>
+                    <img src="./27D/Jayesh.png" style="position: absolute; right: 5vw; bottom: 10vh; height: 6vh;">
+                </div>  
             </div>
         </div>
 
@@ -51,7 +52,9 @@
         <script src="script.js"></script>
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['page1', 'page2']
+                // anchors: ['page1', 'page2'],
+                loopHorizontal: false,
+                continuousHorizontal: true,
             });
         </script>
     </body>

@@ -35,7 +35,7 @@ setInterval(function(){
         document.body.style.backgroundImage = "url(BGe.jpg";
         document.getElementById("p2").style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 0.8), rgba(221, 27, 179, 0.712))";
         document.getElementsByTagName("meta")[0].content = "#6221db";
-        document.getElementById("p2").style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 1), rgba(221, 27, 179, 1))";
+        document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 1), rgba(221, 27, 179, 1))";
     }
 
     document.getElementById("count").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";

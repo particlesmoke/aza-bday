@@ -60,18 +60,19 @@ p{
     top: 0;
 }
 
-#p2{
-    /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651)); */
-}
 
 #playbutton{
     margin-left: 44vw;
     height: 12vw;
     width: 12vw;
-    background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));;
+    /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));; */
     border-radius: 50%;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#p2{
+    isolation: isolate;
 }
 
 i{

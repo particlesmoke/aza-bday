@@ -1,3 +1,39 @@
+@font-face {
+    font-family: countdown;
+    src: url(Technology-Bold.ttf);
+}
+
+@font-face{
+    font-family: pacifico;
+    src: url(Pacifico-Regular.ttf);
+}
+
+@font-face{
+    font-family: sweet;
+    src: url(./sweet\ purple.ttf);
+}
+
+h1{
+    text-align: center;
+    font-size: 3vh;
+    font-family: pacifico;
+    padding: 2vh;
+}
+
+.cover{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
 body{
     /* background-image: url(BG.jpg); */
     background-size: cover;
@@ -20,21 +56,10 @@ p{
     /* overflow-y: scroll; */
 }
 
-
-
-@font-face {
-    font-family: countdown;
-    src: url(Technology-Bold.ttf);
-}
-
-@font-face{
-    font-family: pacifico;
-    src: url(Pacifico-Regular.ttf);
-}
-
-@font-face{
-    font-family: sweet;
-    src: url(./sweet\ purple.ttf);
+i{
+    padding: 4vw ;
+    color: white;
+    font-size: 4vw;
 }
 
 #count{
@@ -46,46 +71,35 @@ p{
     animation: flicker 1.5s infinite alternate; 
 }
 
-.cover{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    text-align: center;
-}
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-}
-
-
 #playbutton{
     margin-left: 44vw;
     height: 12vw;
     width: 12vw;
     /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));; */
     border-radius: 50%;
+}
+
+
+#daybutton{
+    width: 40vw;
+    height: 6vw;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    border-radius: 5vw;
+    left: 30vw;
+    top: 3vh;
+    font-size: 6vw;
+    padding: 2vw;
+    font-family: countdown;
+}
+
+
+.button{
     text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-#p2{
-    isolation: isolate;
-}
-
-i{
-    padding: 4vw ;
-    color: white;
-    font-size: 4vw;
-}
-
-h1{
-    text-align: center;
-    font-size: 3vh;
-    font-family: pacifico;
-    padding: 2vh;
+    box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.6);
+    border-width: 1px;
+    border-color: white;
 }
 
 @keyframes flicker {

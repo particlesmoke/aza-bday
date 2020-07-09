@@ -1,3 +1,10 @@
+if( screen.width>screen.height ) {
+    alert("Kid, please don't open on PC, it's not there yet, working on it.");
+    // document.body.style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 0.8), rgba(221, 27, 179, 0.712))";
+    document.body.innerHTML = "<br><br><br><br><br><br><br><br><p>why still here, go open on your phone</p>";
+   }
+
+
 document.getElementById("count").innerHTML="!!!";
 
 
@@ -87,9 +94,3 @@ function playmusic()
 player.onpause = function(){
     document.getElementById("button").className = "fas fa-play";
 }
-
-if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
-    alert("Kid, please don't open on PC, it's not there yet, working on it.");
-    // document.body.style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 0.8), rgba(221, 27, 179, 0.712))";
-    document.body.innerHTML = "<br><br><br><br><br><br><br><br><p>why still here, go open on your phone</p>";
-   }

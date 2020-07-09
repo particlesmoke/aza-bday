@@ -98,6 +98,10 @@ i{
     font-family: countdown;
 }
 
+#p2{
+    backdrop-filter: blur(20px);
+}
+
 
 .button{
     text-align: center;

@@ -17,7 +17,7 @@ h1{
     text-align: center;
     font-size: 3vh;
     font-family: pacifico;
-    padding: 2vh;
+    padding: 3vh;
 }
 
 .cover{
@@ -48,8 +48,10 @@ body{
 p{
     color: white;
     text-align: center;
-    padding-left: 15vw;
-    padding-right: 15vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     font-size: 3vh;
     font-family: sweet;
     /* height: 70vh; */

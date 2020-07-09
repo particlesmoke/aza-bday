@@ -79,6 +79,8 @@ i{
     width: 12vw;
     /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));; */
     border-radius: 50%;
+    position: absolute;
+    bottom: 40vh;
 }
 
 

@@ -4,6 +4,9 @@ if(screen.width>=screen.height) {
     document.body.innerHTML = "<br><br><br><br><br><br><br><br><p style=\"color:black\">why still here, go open on your phone</p>";
 }
 
+window.onload = function() {
+    var gifs = Gifffer();
+}
 
 document.getElementById("count").innerHTML="!!!";
 
@@ -83,11 +86,13 @@ function playmusic()
     {
         player.play();  
         document.getElementById("button").className = "fas fa-pause";
+        gifs[0].click();
     }
     else
     {
         player.pause();
         document.getElementById("button").className = "fas fa-play";
+        gifs[0].click();
     }
 }  
 

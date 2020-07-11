@@ -60,12 +60,12 @@ else if(hours<=19 && hours>=13){
 }
 else if(hours<=12 && hours>=8){
     for (var i = 1; i<length; i++){
-        pages[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(192, 87, 45, 0.651), rgba(255, 214, 34, 0.87))";
+        pages[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 0.651), rgba(255, 214, 34, 0.87))";
     }
     document.body.style.backgroundImage = "url(BGa.jpg)";
     document.getElementsByTagName("meta")[0].content = "#ffd622";
-    document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(192, 87, 45, 1), rgba(255, 214, 34, 1))";
-    document.getElementById("daybutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(192, 87, 45, 1), rgba(255, 214, 34, 1))";
+    document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 1), rgba(255, 214, 34, 1))";
+    document.getElementById("daybutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 1), rgba(255, 214, 34, 1))";
 }
 else{
     for (var i = 1; i<length; i++){

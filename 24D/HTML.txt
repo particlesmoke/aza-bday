@@ -1,0 +1,40 @@
+<div class="section" id="p2" class="bgc">
+                <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
+                <div class="slide">
+                    <h1 style="top: 0vh; position: absolute; width: 84vw;">Jab Koi Baat</h1>
+                    <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
+                        <img data-gifffer="./24D/Record.gif">
+                    </div>
+                    <audio id="player" preload="auto">
+                        <source src="./24D/Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div id="playbutton" class="button" onclick="playmusic()"><i id="button" class="fas fa-play"></i></div>
+                    <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
+                        <p>An Oldie, papa likes this song.<br>😊</p>
+                        <p>Stay strong na, and remember I am always there for you.</p>
+                        <hr style="border: 5px solid white">
+                    </div>
+                    <br><br>
+                    <p style="font-size: 1.8vh; position: absolute; bottom: 5vh; width: 70vw; "> I am trying to add scrollbars 😂 Till then, try scrolling everywhere. </p>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <img src="./24D/Lilone.png" style="position: absolute; right: 60vw; top: 7vh; height: 6vh;">
+                        <div class="scroll" style="margin-top: 15vh; height: 65vh; overflow-y: scroll; scrollbar-face-color: black; scrollbar-width: 2vw;"> 
+                        <img src="./24D/Aza.jpg" style="width: 80vw; margin-top: 10vh; margin-left: 10vw; transform: rotate(-3deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                        <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Lil one, strong one.</p> <br> <br> <br>
+                        <p style="margin-top: -5vh;">Mujhe ye photo bohot zyaada pasand hai, I look at this and I feel like, this is the person I'd really want to have by my side 🙂 <br> You look so confident and strong in this, as if you are ready to take on the  world. And I adore that.</p>
+                        </div>
+                        <img src="./24D/smile.png" style="position: absolute; right: 5vw; bottom: 13vh; height: 6vh;">
+                    </div>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <a href="https://www.instagram.com/p/CCUpccMBCyD60seXqu4-300Du__-cPgV2tNI4A0/"> 
+                        <img src="./24D/Post.jpg" style="width: 84vw; position: relative; left: 8vw; top: 15vh; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
+                        </a>
+                        <p style="position: absolute; bottom: 10vh; height: 25vh; width: 70vw; font-size: 4vh;">And that's okay. We'll get through it.</p>
+                    </div>
+                </div>
+            </div>

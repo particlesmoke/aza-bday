@@ -100,6 +100,7 @@ i{
 
 #p2{
     backdrop-filter: blur(15px);
+    /* background-image: linear-gradient(to bottom right, rgba(192, 87, 45, 0.651), rgba(255, 214, 34, 0.87)); */
 }
 
 

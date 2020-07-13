@@ -96,6 +96,16 @@ function playmusic()
     }
 }  
 
+function openlyric(){
+    document.getElementById("lyrics").style.width = "90vw";
+    document.getElementById("lyrics").style.opacity = "0.8";
+}
+
+function closelyric(){
+    document.getElementById("lyrics").style.width = "0vw";
+    document.getElementById("lyrics").style.opacity = "0";
+}
+
 player.onpause = function(){
     document.getElementById("button").className = "fas fa-play";
 }

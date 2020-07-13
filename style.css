@@ -58,11 +58,6 @@ p{
     /* overflow-y: scroll; */
 }
 
-i{
-    padding: 4vw ;
-    color: white;
-    font-size: 4vw;
-}
 
 #count{
     font-family: countdown;
@@ -75,14 +70,47 @@ i{
 
 #playbutton{
     margin-left: 44vw;
-    height: 12vw;
-    width: 12vw;
+    height: 15vw;
+    width: 15vw;
     /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));; */
     border-radius: 50%;
     position: absolute;
     bottom: 40vh;
 }
 
+#play{
+    padding: 5.5vw ;
+    color: white;
+    font-size: 4vw;
+}
+
+#lyricbutton{
+    margin-left: 64vw;
+    height: 10vw;
+    width: 10vw;
+    /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));; */
+    border-radius: 50%;
+    position: absolute;
+    bottom: calc(40vh + 2vw);
+}
+
+#lyric{
+    padding: 3.5vw ;
+    color: white;
+    font-size: 3vw;
+}
+
+#lyrics{
+    width: 0;
+    height: 90vh;
+    top: 5vh;
+    left: 5vw;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
 
 #daybutton{
     width: 40vw;

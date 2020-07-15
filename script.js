@@ -85,13 +85,13 @@ function playmusic()
     if (player.paused)
     {
         player.play();  
-        document.getElementById("button").className = "fas fa-pause";
+        document.getElementById("play").className = "fas fa-pause";
         gifs[0].click();
     }
     else
     {
         player.pause();
-        document.getElementById("button").className = "fas fa-play";
+        document.getElementById("play").className = "fas fa-play";
         gifs[0].click();
     }
 }  

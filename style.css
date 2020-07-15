@@ -69,9 +69,9 @@ p{
 }
 
 #playbutton{
-    margin-left: 44vw;
-    height: 15vw;
-    width: 15vw;
+    margin-left: calc(50vw - 4vh);
+    height: 8vh;
+    width: 8vh;
     /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));; */
     border-radius: 50%;
     position: absolute;
@@ -79,28 +79,28 @@ p{
 }
 
 #play{
-    padding: 5.5vw ;
+    padding: 2.5vh ;
     color: white;
-    font-size: 4vw;
+    font-size: 3vh;
 }
 
 #lyricbutton{
-    margin-left: 64vw;
-    height: 10vw;
-    width: 10vw;
+    margin-left: calc(50vw + 7vh);
+    height: 5vh;
+    width: 5vh;
     /* background-image: linear-gradient(to bottom right, rgba(17, 145, 204, 0.87), rgba(27, 0, 100, 0.651));; */
     border-radius: 50%;
     position: absolute;
-    bottom: calc(40vh + 2vw);
+    bottom: 41.5vh;
 }
 
 #lyric{
-    padding: 3.5vw ;
+    padding: 1.5vh ;
     color: white;
-    font-size: 3vw;
+    font-size: 2vh;
 }
 
-#lyrics{
+#lyricspage{
     width: 0;
     height: 90vh;
     top: 5vh;
@@ -113,16 +113,16 @@ p{
 }
 
 #daybutton{
-    width: 40vw;
-    height: 6vw;
+    width: 5vh;
+    height: 5vh;
     position: absolute;
     background-color: black;
     z-index: 1;
-    border-radius: 5vw;
-    left: 30vw;
+    border-radius: 5vh;
+    left: 10vw;
     top: 3vh;
-    font-size: 6vw;
-    padding: 2vw;
+    font-size: 3vh;
+    padding: 1vh;
     font-family: countdown;
 }
 
@@ -132,11 +132,16 @@ p{
 }
 
 
+
 .button{
     text-align: center;
     box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.6);
     border-width: 1px;
     border-color: white;
+}
+
+#nav{
+
 }
 
 @keyframes flicker {

@@ -37,12 +37,18 @@ var now = new Date().getTime();
 var distance = countDownDate - now;
 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-var pages = document.getElementsByClassName("section")
+var pages = document.getElementsByClassName("section");
+var buttons = document.getElementsByClassName("button");
 var length = pages.length;
+var butn = buttons.length;
 
 if(hours<=1 || hours>=18){
     for (var i = 1; i<length; i++){
         pages[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(10, 100, 150, 0.87), rgba(27, 0, 100, 0.651))";
+    }
+    for(var i = 0; i<butn; i++)
+    {
+        buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(10, 100, 150, 1), rgba(27, 0, 100, 1))";
     }
     document.body.style.backgroundImage = "url(BGn.jpg)";
     document.getElementsByTagName("meta")[0].content = "#0a6596";
@@ -71,6 +77,10 @@ else{
     for (var i = 1; i<length; i++){
         pages[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 0.8), rgba(221, 27, 179, 0.712))";
     }
+    for(var i = 0; i<butn; i++)
+    {
+        buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 1), rgba(221, 27, 179, 1))";
+    }
     document.body.style.backgroundImage = "url(BGe.jpg";
     document.getElementsByTagName("meta")[0].content = "#6221db";
     document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 1), rgba(221, 27, 179, 1))";
@@ -79,19 +89,21 @@ else{
 
 // document.getElementsByClassName("section")[1].style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 0.8), rgba(221, 27, 179, 0.712))";
 
-player = document.getElementById("player"); 
-function playmusic()  
+
+player = document.getElementsByClassName("player"); 
+function playmusic(x)  
 {  
-    if (player.paused)
+    x=x-21;
+    if (player[x].paused)
     {
-        player.play();  
-        document.getElementById("play").className = "fas fa-pause";
-        gifs[0].click();
+        player[x].play();  
+        document.getElementsByClassName("fa-play")[x].className = "fas fa-pause";
+        gifs[x].click();
     }
     else
     {
-        player.pause();
-        document.getElementById("play").className = "fas fa-play";
+        player[x].pause();
+        document.getElementsByClassName("fa-pause")[0].className = "fas fa-play";
         gifs[0].click();
     }
 }  

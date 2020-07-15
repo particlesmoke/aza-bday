@@ -78,11 +78,13 @@ p{
     bottom: 40vh;
 }
 
-#play{
+.fas{
     padding: 2.5vh ;
     color: white;
     font-size: 3vh;
 }
+
+
 
 #lyricbutton{
     margin-left: calc(50vw + 7vh);
@@ -126,9 +128,9 @@ p{
     font-family: countdown;
 }
 
-#p2{
+.bgc{
     backdrop-filter: blur(15px);
-    /* background-image: linear-gradient(to bottom right, rgba(192, 87, 45, 0.651), rgba(255, 214, 34, 0.87)); */
+
 }
 
 

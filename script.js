@@ -93,7 +93,7 @@ else{
 player = document.getElementsByClassName("player"); 
 function playmusic(x)  
 {  
-    x=x-21;
+    x=x-20;
     if (player[x].paused)
     {
         player[x].play();  
@@ -108,14 +108,41 @@ function playmusic(x)
     }
 }  
 
-function openlyric(){
-    document.getElementById("lyrics").style.width = "90vw";
-    document.getElementById("lyrics").style.opacity = "0.8";
+function openlyric(y){
+    var element = "lyricspage"
+    element = element.concat(y);
+    document.getElementById(element).style.width = "90vw";
+    document.getElementById(element).style.opacity = "0.8";
 }
 
-function closelyric(){
-    document.getElementById("lyrics").style.width = "0vw";
-    document.getElementById("lyrics").style.opacity = "0";
+function closelyric(y){
+    var element = "lyricspage"
+    element = element.concat(y);
+    document.getElementById(element).style.width = "0vw";
+    document.getElementById(element).style.opacity = "0";
+}
+
+function opennav(){
+    document.getElementById("navpage").style.width = "90vw";
+    document.getElementById("navpage").style.opacity = "0.8";
+    document.getElementById("navpage").style.zIndex = "2";
+
+}
+
+function closenav(){
+    document.getElementById("navpage").style.width = "0vw";
+    document.getElementById("navpage").style.opacity = "0";
+    document.getElementById("navpage").style.zIndex = "0";
+    setTimeout(function(){
+        var url = window.location.href;
+        var pos = url.lastIndexOf("locate", 15);
+        var text = url.slice(pos-1);
+        // if (!(text.localeCompare("Home"))){
+            document.getElementById("daybutton").innerHTML = text;
+        // }     
+    },750)
+    
+
 }
 
 player.onpause = function(){

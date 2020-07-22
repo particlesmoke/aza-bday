@@ -18,21 +18,94 @@
 
     </head>
     <body>
-        <div id="daybutton" class="button">20</div>
-        <div id="navcontainer">
-            <div id="nav"></div>
+        <div id="daybutton" class="button" onclick="opennav()">13</div>
+        <div id="navpage"> <i class="fas fa-times" onclick="closenav()" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+            <div id="nav" class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
+                <a href="#Home" class="link" onclick="closenav()" style="border: none;"> Home </a>
+                <a href="#13" class="link" onclick="closenav()"> 13 </a>
+                <a href="#21" class="link" onclick="closenav()"> 21 </a>
+                <a href="#22" class="link" onclick="closenav()"> 22 </a>
+                <a href="#23" class="link" onclick="closenav()"> 23 </a>
+                <a href="#24" class="link" onclick="closenav()"> 24 </a>
+                <a href="#25" class="link" onclick="closenav()"> 25 </a>
+                <a href="#26" class="link" onclick="closenav()"> 26 </a>
+                <a href="#27" class="link" onclick="closenav()"> 27 </a>
+                <a href="#28" class="link" onclick="closenav()"> 28 </a>
+            </div>
         </div>
         <div class="cover">
             <p id="count">!!!</p>
             <a href="#page2" class="links"></a><i class="fas fa-arrow-circle-down" style="color: rgb(255, 207, 117);"></i></a> <br><br> <br><br><br>
-            <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black; position:absolute; bottom: 7vh; width: 70vw;">I am really sorry kid <br> It got a little messed up.z.</p>
+            <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black; position:absolute; bottom: 7vh; width: 70vw;">I am really sorry kid <br> It got a little messed up..</p>
         </div>
         <div id="fullpage">
             <div class="section active"></div>
+            <div class="section bgc" id="13d">
+                <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
+                <div class="slide">
+                    <div id="lyricspage2" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(2)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+                        <h1 style="margin-top: -10vh;">Lyrics</h1>
+                        <div class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
+                            <p> 
+                                Then you came my way on a winter's day <br>
+                                Shouted loudly come out and play <br>
+                                Can't you tell I got news for you <br>
+                                Sun is shining and so are you <br>
+                                And we're gonna be alright <br>
+                                Dry your tears and hold tight <br>
+                                Can't you tell I got news for you <br>
+                                Sun is shining and so are you <br>
+                                And we're gonna be alright <br>
+                                Dry your tears and hold tight <br>
+                                Can't you tell I got news for you <br>
+                                Sun is shining and so are you <br>
+                            </p>
+                        </div>
+                    </div>
+                    <h1 style="top: 0vh; position: absolute; width: 84vw;">Sun is shining</h1>
+                    <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
+                        <img src="13D/Sun.png" style="width: 100%;">
+                    </div>
+                    <audio class="player" id="player13" preload="auto">
+                        <source src="./13D/Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div id="playbutton" class="button" onclick="playmusic(20)"><i id="button13" class="fas fa-play"></i></div>
+                    <div id="lyricbutton" class="button" onclick="openlyric(2)"><i id="lyric" class="fas fa-align-left"></i></div>
+                    <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
+                        <p>You know why?</p>
+                        <p>Because you are my sunshine</p>
+                        <p>Everything is warm and bright when you are shining on me 😁</p>
+                    </div>
+                    <br><br>
+                    <hr style="border: 3px solid white; position: absolute; bottom: 12vh; width: 100vw;">
+                    <p style="font-size: 1.8vh; position: absolute; bottom: 5vh; width: 70vw; "> Archive is working now!</p>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <img src="./13D/Ola.png" style="position: absolute; right: 60vw; top: 13vh; height: 6vh;">
+                        <div class="scroll" style="margin-top: 20vh; height: 60vh; overflow-y: scroll; scrollbar-face-color: black; scrollbar-width: 2vw;"> 
+                        <!-- <img src="./23D/Kiddo.png" style="width: 80vw; margin-top: 10vh; margin-left: 10vw; transform: rotate(-3deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                        <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Lil one, strong one.</p> <br> <br> <br> -->
+                        <p> la distancia solo asusta a aquellos que no creen en el amor verdadero <br> That's a spanish saying. <br> And well, that's so true for me and you isn't it? Through the years we couldn't meet or even talk, love survived... <br> I was never scared of the distance between us, I was never scared for my love for you. I can not talk to you for years and years and still when we talk, it'll feel like we never stopped talking. Because my love for you had by then gotten to the point that it didn't care for geography or the logistics of communication, it had planned to exist and not stop existing. <br> <br> So ye sab to meri tareef in a way. <br> But if you remember that Instagram post, sometimes you meet someone, and then there just isn't an upgrade. </p>
+                        <!-- <p>Baiscally. Apna time aayega.</p> -->
+                        </div>
+                        <img src="./13D/Adios.png" style="position: absolute; right: 5vw; bottom: 13vh; height: 6vh;">
+                    </div>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <a href="https://www.instagram.com/p/CCOlmriFJrD/?utm_source=ig_web_copy_link"> 
+                        <img src="./13D/Post.jpg" style="width: 84vw; position: relative; left: 8vw; top: 10vh; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
+                        </a>
+                        <p style="position: absolute; bottom: 10vh; height: 25vh; width: 70vw; font-size: 2.5vh;">In all the chaos of the world, there are always things that will never change, and on which you can rely. <br> One of those things, I wanna tell you, is my love for you, I will always be there for you, to listen to you, to laugh with you, to heal with you, to dream with you, to console you, to hug you, to understand you, and to tell you it is going to be okay </p>
+                    </div>
+                </div>
+            </div>
             <div class="section bgc" id="21d">
                 <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
                 <div class="slide">
-                    <div id="lyricspage"> <i class="fas fa-times" onclick="closelyric()" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+                    <div id="lyricspage1" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(1)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
                         <h1 style="margin-top: -10vh;">Lyrics</h1>
                         <div class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
                             <p> 
@@ -82,12 +155,12 @@
                     <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
                         <img src="21D/Heart.png" style="width: 100%;">
                     </div>
-                    <audio class="player" preload="auto">
+                    <audio class="player" id="player21" preload="auto">
                         <source src="./21D/Audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <div id="playbutton" class="button" onclick="playmusic(21)"><i id="button" class="fas fa-play"></i></div>
-                    <div id="lyricbutton" class="button" onclick="openlyric()"><i id="lyric" class="fas fa-align-left"></i></div>
+                    <div id="playbutton" class="button" onclick="playmusic(21)"><i id="button21" class="fas fa-play"></i></div>
+                    <div id="lyricbutton" class="button" onclick="openlyric(1)"><i id="lyric" class="fas fa-align-left"></i></div>
                     <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
                         <p>This is actually a speech by Alan Watts, and it makes a lot of sense. And I was thinking how my love for you is not just in my thoughts, which I am able to put in words, and symbols, and the fairly superficial things I make for you, but it is my reality bilkul.</p>
                         <p>I started off by trying to make a wave (depicting emotion) through the heart, ye ban gaya.</p>
@@ -125,11 +198,11 @@
                     <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
                         <img src="22D/Roadtrees.png" style="width: 100%;">
                     </div>
-                    <audio class="player" preload="auto">
+                    <audio class="player" id="player22" preload="auto">
                         <source src="./22D/Audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <div id="playbutton" class="button" onclick="playmusic(22)"><i id="button" class="fas fa-play"></i></div>
+                    <div id="playbutton" class="button" onclick="playmusic(22)"><i id="button22" class="fas fa-play"></i></div>
                     <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
                         <p>Ik Reckless, but I always felt energised in loving you more and more whenever I listened to this song.</p>
                         <!-- <p>And dk why just felt like drawing a flower for you... To wohi hai upar...</p> -->
@@ -168,11 +241,11 @@
                     <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
                         <img src="23D/Flower.png" style="width: 100%;">
                     </div>
-                    <audio class="player" preload="auto">
+                    <audio class="player" id="player23" preload="auto">
                         <source src="./23D/Audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <div id="playbutton" class="button" onclick="playmusic(23)"><i id="button" class="fas fa-play"></i></div>
+                    <div id="playbutton" class="button" onclick="playmusic(23)"><i id="button23" class="fas fa-play"></i></div>
                     <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
                         <p>I knew I was going to put this song..But I listened to it and I just stopped and cried a bit...</p>
                         <p>And dk why just felt like drawing a flower for you... To wohi hai upar...</p>
@@ -210,11 +283,11 @@
                     <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
                         <img data-gifffer="./24D/Record.gif">
                     </div>
-                    <audio class="player" preload="auto">
+                    <audio class="player" id="player24" preload="auto">
                         <source src="./24D/Audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <div id="playbutton" class="button" onclick="playmusic(24)"><i id="button" class="fas fa-play"></i></div>
+                    <div id="playbutton" class="button" onclick="playmusic(24)"><i id="button24" class="fas fa-play"></i></div>
                     <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
                         <p>An Oldie, papa likes this song.<br>😊</p>
                         <p>Stay strong na, and remember I am always there for you.</p>
@@ -247,11 +320,11 @@
                 <div class="slide">
                     <h1 style="top: 0vh; position: absolute; width: 92vw;">Jitni Dafa</h1>
                     <img src="./25D/Aza sketch.png" style="width: 80vw; margin-left: 10vw; padding: 2vw; position:absolute; bottom: 45vh;">
-                    <audio class="player" preload="auto">
+                    <audio class="player" id="player25" preload="auto">
                         <source src="./25D/Audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <div id="playbutton" class="button" onclick="playmusic(25)"><i id="button" class="fas fa-play"></i></div>
+                    <div id="playbutton" class="button" onclick="playmusic(25)"><i id="button25" class="fas fa-play"></i></div>
                     <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
                         <p>One of the only Hindi songs in my library..<br>😊</p>
                         <p>I can't draw you without making you a clown... Ya phir i choose the wrong image to copy all the time..</p>
@@ -285,11 +358,11 @@
                 <div class="slide">
                     <h1 style="top: 0vh; position: absolute; width: 92vw;">Tired</h1>
                     <img src="./26D/heart-rebuild.gif" style="width: 70vw; margin-left: 15vw; padding: 2vw; position:absolute; bottom: 50vh;">
-                    <audio class="player" preload="auto">
+                    <audio class="player" id="player26" preload="auto">
                         <source src="./26D/Audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <div id="playbutton" class="button" onclick="playmusic(26)"><i id="button" class="fas fa-play"></i></div>
+                    <div id="playbutton" class="button" onclick="playmusic(26)"><i id="button26" class="fas fa-play"></i></div>
                     <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
                         <p>One of our songs...</p>
                         <p>Memories allusions..</p>
@@ -320,11 +393,11 @@
                 <div class="slide">
                     <h1>A table just for 2</h1>
                     <img src="./27D/Table.png" style="width: 75vw; margin-left: 10vw; padding: 2vw; margin-top: -10vh;">
-                    <audio class="player" preload="auto">
+                    <audio class="player" id="player27" preload="auto">
                         <source src="./27D/Audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
-                    <div id="playbutton" onclick="playmusic(27)"><i id="button" class="fas fa-play"></i></div>
+                    <div id="playbutton" class="button" onclick="playmusic(27)"><i id="button27" class="fas fa-play"></i></div>
                     <p>This song reminds me of you, or rather I listen to it to smile remembering you 😁</p>
                     <br> <br> <br> <br> <br> <br> <br>
                      <hr style="border: 5px solid;"> 
@@ -348,6 +421,7 @@
                 </div>
             </div>
 
+
         </div>
         </div>
 
@@ -355,7 +429,7 @@
         <script src="script.js"></script>
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                // anchors: ['page1', 'page2'],
+                anchors: ['Home', '13', '21','22','23','24','25','26','27','28'],
                 normalScrollElements : '.scroll',
                 loopHorizontal: false,
                 continuousHorizontal: true,

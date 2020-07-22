@@ -84,7 +84,21 @@ p{
     font-size: 3vh;
 }
 
-
+.link{
+    margin-left: 9vw;
+    margin-top: 5vh;
+    width: 3vh;
+    height: 3vh;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3vh;
+    padding: 2vh;
+    font-family: countdown;
+    color: white;
+    display: inline-block;
+    border: white solid 5px;
+    border-radius: 5vh;
+}
 
 #lyricbutton{
     margin-left: calc(50vw + 7vh);
@@ -102,7 +116,7 @@ p{
     font-size: 2vh;
 }
 
-#lyricspage{
+.lyricspage{
     width: 0;
     height: 90vh;
     top: 5vh;
@@ -114,9 +128,21 @@ p{
     z-index: 2;
 }
 
+#navpage{
+    width: 0;
+    height: 90vh;
+    top: 5vh;
+    left: 5vw;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    backdrop-filter: blur(20px);
+    z-index: 0;
+}
+
 #daybutton{
-    width: 5vh;
-    height: 5vh;
+    width: 3vh;
+    height: 3vh;
     position: absolute;
     background-color: black;
     z-index: 1;
@@ -124,7 +150,7 @@ p{
     left: 10vw;
     top: 3vh;
     font-size: 3vh;
-    padding: 1vh;
+    padding: 2vh;
     font-family: countdown;
 }
 

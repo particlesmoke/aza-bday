@@ -59,6 +59,10 @@ else if(hours<=19 && hours>=13){
     for (var i = 1; i<length; i++){
         pages[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 0.9), rgba(255, 247, 129, 0.6))";
     }
+    for(var i = 0; i<butn; i++)
+    {
+        buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1)))";
+    }
     document.body.style.backgroundImage = "url(BGm.jpg)";
     document.getElementsByTagName("meta")[0].content = "#4ab7ff";
     document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1))";
@@ -67,6 +71,10 @@ else if(hours<=19 && hours>=13){
 else if(hours<=12 && hours>=8){
     for (var i = 1; i<length; i++){
         pages[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 0.651), rgba(255, 214, 34, 0.87))";
+    }
+    for(var i = 0; i<butn; i++)
+    {
+        buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 1), rgba(255, 214, 34, 1))";
     }
     document.body.style.backgroundImage = "url(BGa.jpg)";
     document.getElementsByTagName("meta")[0].content = "#ffd622";
@@ -93,7 +101,7 @@ else{
 player = document.getElementsByClassName("player"); 
 function playmusic(x)  
 {  
-    x=x-20;
+    x=x-19;
     if (player[x].paused)
     {
         player[x].play();  

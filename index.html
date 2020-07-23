@@ -22,6 +22,7 @@
         <div id="navpage"> <i class="fas fa-times" onclick="closenav()" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
             <div id="nav" class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
                 <a href="#Home" class="link" onclick="closenav()" style="border: none;"> Home </a>
+                <a href="#12" class="link" onclick="closenav()"> 12 </a>
                 <a href="#13" class="link" onclick="closenav()"> 13 </a>
                 <a href="#21" class="link" onclick="closenav()"> 21 </a>
                 <a href="#22" class="link" onclick="closenav()"> 22 </a>
@@ -40,6 +41,72 @@
         </div>
         <div id="fullpage">
             <div class="section active"></div>
+            <div class="section bgc" id="12d">
+                <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
+                <div class="slide">
+                    <div id="lyricspage12" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(12)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+                        <h1 style="margin-top: -10vh;">Lyrics</h1>
+                        <div class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
+                            <p> 
+                                Raat ke teen baje<br>
+                                Meri aankh khule <br>
+                                Raat ke teen baje<br>
+                                Meri aankh khule <br>
+                                Teri yaad ke silsilay <br>
+                                Neend aaye na <br>
+                                Phir bhi dekhta he rahoon <br>
+                                Sapne tere <br> <br>
+                                Teri yaad ki hawaon main <br>
+                                Dil mera <br>
+                                Din raat urta rahe <br>
+                                Patang jaise <br> <br>
+                                Teri yaad ki hawaon main <br>
+                                Dil mera <br>
+                                Din raat urta rahe <br>
+                                Patang jaise <br>
+                            </p>
+                        </div>
+                    </div>
+                    <h1 style="top: 0vh; position: absolute; width: 84vw;">Patang</h1>
+                    <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
+                        <img src="12D/Kite.png" style="width: 100%;">
+                    </div>
+                    <audio class="player" id="player13" preload="auto">
+                        <source src="./12D/Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div id="playbutton" class="button" onclick="playmusic(19)"><i id="button13" class="fas fa-play"></i></div>
+                    <div id="lyricbutton" class="button" onclick="openlyric(12)"><i id="lyric" class="fas fa-align-left"></i></div>
+                    <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
+                        <p>That's exactly what happened tonight.</p>
+                        <p>And has happened many times before.</p>
+                        <p>I just wake up and miss you, and a pang of loneliness hits me.</p>
+                    </div>
+                    <br><br>
+                    <hr style="border: 3px solid white; position: absolute; bottom: 12vh; width: 100vw;">
+                    <p style="font-size: 1.8vh; position: absolute; bottom: 5vh; width: 70vw; "> Do you know things are archived now? You can scroll or click on the days button. </p>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <img src="./12D/Hello.png" style="position: absolute; right: 60vw; top: 13vh; height: 6vh;">
+                        <div class="scroll" style="margin-top: 20vh; height: 60vh; overflow-y: scroll; scrollbar-face-color: black; scrollbar-width: 2vw;"> 
+                        <img src="./12D/Me.gif" style="width: 80vw; margin-top: 10vh; margin-left: 10vw; transform: rotate(-3deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                        <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Ciao</p> <br> <br> <br>
+                        <!-- <p> la distancia solo asusta a aquellos que no creen en el amor verdadero <br> That's a spanish saying. <br> And well, that's so true for me and you isn't it? Through the years we couldn't meet or even talk, love survived... <br> I was never scared of the distance between us, I was never scared for my love for you. I can not talk to you for years and years and still when we talk, it'll feel like we never stopped talking. Because my love for you had by then gotten to the point that it didn't care for geography or the logistics of communication, it had planned to exist and not stop existing. <br> <br> So ye sab to meri tareef in a way. <br> But if you remember that Instagram post, sometimes you meet someone, and then there just isn't an upgrade. </p> -->
+                        <!-- <p>Baiscally. Apna time aayega.</p> -->
+                        </div>
+                        <img src="./12D/Bye.png" style="position: absolute; right: 5vw; bottom: 13vh; height: 6vh;">
+                    </div>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <a href="https://www.instagram.com/p/CC8tbX2lTPB/?utm_source=ig_web_copy_link"> 
+                        <img src="./12D/Post.jpg" style="width: 84vw; position: relative; left: 8vw; top: 10vh; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
+                        </a>
+                        <p style="position: absolute; bottom: 10vh; height: 25vh; width: 70vw; font-size: 2.5vh;">Please never be this kind of mature. <br> And also not the kind where you forget having fun. <br> All other kinds are okay. <br> <br> And encouraged. </p>
+                    </div>
+                </div>
+            </div>
             <div class="section bgc" id="13d">
                 <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
                 <div class="slide">
@@ -420,6 +487,22 @@
                     </div>
                 </div>
             </div>
+            <div class="section bgc" id="27d">
+                <div class="slide">
+                    <h1>Fight song</h1>
+                    <!-- <img src="./27D/Table.png" style="width: 75vw; margin-left: 10vw; padding: 2vw; margin-top: -10vh;"> -->
+                    <audio class="player" id="player28" preload="auto">
+                        <source src="./28D/Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div id="playbutton" class="button" onclick="playmusic(27)"><i id="button28" class="fas fa-play"></i></div>
+                    <p>This song has gotten me by some of my weaker moments 😁<br> Hope you like it </p>
+                    <br> <br> <br> <br> <br> <br> <br>
+                     <hr style="border: 5px solid;"> 
+                     <br><br>
+                    <p style="font-size: 2vh;"> Time based looks on : ) (Visit at different times to notice.) Be good kiddo. Love you. </p>
+                </div>  
+            </div>
 
 
         </div>
@@ -429,7 +512,7 @@
         <script src="script.js"></script>
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
-                anchors: ['Home', '13', '21','22','23','24','25','26','27','28'],
+                anchors: ['Home', '12', '13', '21','22','23','24','25','26','27','28'],
                 normalScrollElements : '.scroll',
                 loopHorizontal: false,
                 continuousHorizontal: true,

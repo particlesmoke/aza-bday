@@ -101,7 +101,7 @@ else{
 player = document.getElementsByClassName("player"); 
 function playmusic(x)  
 {  
-    x=x-19;
+    x=x-18;
     if (player[x].paused)
     {
         player[x].play();  

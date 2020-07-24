@@ -156,3 +156,26 @@ function closenav(){
 player.onpause = function(){
     document.getElementById("button").className = "fas fa-play";
 }
+
+
+
+var myFullpage = new fullpage('#fullpage', {
+    anchors: ['Home', '10', '12', '13', '21','22','23','24','25','26','27','28'],
+    normalScrollElements : '.scroll',
+    loopHorizontal: false,
+    continuousHorizontal: true,
+
+    onLeave: function(origin, destination, direction){
+        if (origin>1){
+            document.getElementsByClassName("fa-pause")[0].className = "fas fa-play";
+        }
+        setTimeout(function(){
+            var url = window.location.href;
+            var pos = url.lastIndexOf("locate", 15);
+            var text = url.slice(pos-1);
+            // if (!(text.localeCompare("Home"))){
+                document.getElementById("daybutton").innerHTML = text;
+            // }     
+        },750)
+    }
+});

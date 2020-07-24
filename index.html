@@ -18,10 +18,11 @@
 
     </head>
     <body>
-        <div id="daybutton" class="button" onclick="opennav()">12</div>
+        <div id="daybutton" class="button" onclick="opennav()">10</div>
         <div id="navpage"> <i class="fas fa-times" onclick="closenav()" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
             <div id="nav" class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
                 <a href="#Home" class="link" onclick="closenav()" style="border: none;"> Home </a>
+                <a href="#10" class="link" onclick="closenav()"> 10 </a>
                 <a href="#12" class="link" onclick="closenav()"> 12 </a>
                 <a href="#13" class="link" onclick="closenav()"> 13 </a>
                 <a href="#21" class="link" onclick="closenav()"> 21 </a>
@@ -37,10 +38,70 @@
         <div class="cover">
             <p id="count">!!!</p>
             <a href="#page2" class="links"></a><i class="fas fa-arrow-circle-down" style="color: rgb(255, 207, 117);"></i></a> <br><br> <br><br><br>
-            <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black; position:absolute; bottom: 7vh; width: 70vw;">I am back! <br> Nav works now! </p>
+            <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black; position:absolute; bottom: 7vh; width: 70vw;">Remember to drink lots of water. <br> Keeps stomach ache at bay and brightens the face. </p>
         </div>
         <div id="fullpage">
             <div class="section active"></div>
+            <div class="section bgc" id="10d">
+                <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
+                <div class="slide">
+                    <div id="lyricspage10" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(10)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+                        <h1 style="margin-top: -10vh;">Lyrics</h1>
+                        <div class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
+                            <p> 
+                                I wanna dance by water 'neath the Mexican sky <br>
+                                Drink some Margaritas by a string of blue lights <br>
+                                Listen to the Mariachi play at midnight <br>
+                                Are you with me, are you with me?<br>
+                                Are you with me?<br>
+                                Are you with me?<br>
+                                Drink some Margaritas by a string of blue lights <br>
+                                Listen to the Mariachi play at midnight <br>
+                                Are you with me, are you with me? <br>
+                            </p>
+                        </div>
+                    </div>
+                    <h1 style="top: 0vh; position: absolute; width: 84vw;">Are you with me?</h1>
+                    <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
+                        <img src="10D/City.png" style="width: 100%;">
+                    </div>
+                    <audio class="player" id="player10" preload="auto">
+                        <source src="./10D/Audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div id="playbutton" class="button" onclick="playmusic(18)"><i id="button13" class="fas fa-play"></i></div>
+                    <div id="lyricbutton" class="button" onclick="openlyric(10)"><i id="lyric" class="fas fa-align-left"></i></div>
+                    <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
+                        <p>So much adventure awaits us kiddo!</p>
+                        <p>We'll go places, get lost in depth of cities through the day, meet people, frolick around, shop souvenirs, then spend the night on a quiet beach, a glass of mocktail in hand and snacks beside.</p>
+                        <p>Question is, are you with me? hehe, Ik you are</p>
+                        <p> This is a city street I was trying to paint and an hour or so into it realised it's a bad idea.</p>
+                    </div>
+                    <br><br>
+                    <hr style="border: 3px solid white; position: absolute; bottom: 12vh; width: 100vw;">
+                    <p style="font-size: 1.8vh; position: absolute; bottom: 5vh; width: 70vw; "> Do you know things are archived now? You can scroll or click on the days button. </p>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <img src="./10D/Hi.png" style="position: absolute; right: 60vw; top: 13vh; height: 6vh;">
+                        <div class="scroll" style="margin-top: 20vh; height: 60vh; overflow-y: scroll; scrollbar-face-color: black; scrollbar-width: 2vw;"> 
+                        <!-- <img src="./12D/Me.gif" style="width: 80vw; margin-top: 10vh; margin-left: 10vw; transform: rotate(-3deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt=""> -->
+                        <!-- <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Ciao</p> <br> <br> <br> -->
+                        <p> You know how I know you are my everything? <br> <br> Coz when you are good, everything is good 😁, other troubles of the world seem small. Because what matters most to me is you. When you are good, I wake up happy, get more hungry, love my family more, get more done. You realise how important you are to me? </p>
+                        <!-- <p>Baiscally. Apna time aayega.</p> -->
+                        </div>
+                        <img src="./10D/Smile.png" style="position: absolute; right: 5vw; bottom: 13vh; height: 6vh;">
+                    </div>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <a href="https://www.instagram.com/p/CC-Z1vwlSS2/?utm_source=ig_web_copy_link"> 
+                        <img src="./10D/Post.jpg" style="width: 84vw; position: relative; left: 8vw; top: 15vh; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
+                        </a>
+                        <p style="position: absolute; bottom: 10vh; height: 25vh; width: 70vw; font-size: 2.5vh;">The good. <br> <br> <br> Despite it all. </p>
+                    </div>
+                </div>
+            </div>
             <div class="section bgc" id="12d">
                 <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
                 <div class="slide">
@@ -71,7 +132,7 @@
                     <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
                         <img src="12D/Kite.png" style="width: 100%;">
                     </div>
-                    <audio class="player" id="player13" preload="auto">
+                    <audio class="player" id="player12" preload="auto">
                         <source src="./12D/Untitled Session 3_mixdown.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
@@ -511,19 +572,7 @@
         <script type="text/javascript" src="fullpage.min.js"></script>
         <script src="script.js"></script>
         <script type="text/javascript">
-            var myFullpage = new fullpage('#fullpage', {
-                anchors: ['Home', '12', '13', '21','22','23','24','25','26','27','28'],
-                normalScrollElements : '.scroll',
-                loopHorizontal: false,
-                continuousHorizontal: true,
-
-                onLeave: function(origin, destination, direction){
-                    if (origin>1){
-                        document.getElementsByClassName("fa-pause")[0].className = "fas fa-play";
-                    }
-                    
-	            }
-        });
+            
         </script>
         <script>
             

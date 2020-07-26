@@ -101,7 +101,7 @@ else{
 player = document.getElementsByClassName("player"); 
 function playmusic(x)  
 {  
-    x=x-17;
+    x=x-16;
     if (player[x].paused)
     {
         player[x].play();  
@@ -160,7 +160,7 @@ player.onpause = function(){
 
 
 var myFullpage = new fullpage('#fullpage', {
-    anchors: ['Home', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
+    anchors: ['Home','8', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
     normalScrollElements : '.scroll',
     loopHorizontal: false,
     continuousHorizontal: true,

@@ -101,7 +101,7 @@ else{
 player = document.getElementsByClassName("player"); 
 function playmusic(x)  
 {  
-    x=x-15;
+    x=x-14;
     if (player[x].paused)
     {
         player[x].play();  
@@ -160,7 +160,7 @@ player.onpause = function(){
 
 
 var myFullpage = new fullpage('#fullpage', {
-    anchors: ['Home','7', '8', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
+    anchors: ['Home','6', '7', '8', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
     normalScrollElements : '.scroll',
     loopHorizontal: false,
     continuousHorizontal: true,
@@ -171,11 +171,17 @@ var myFullpage = new fullpage('#fullpage', {
         }
         setTimeout(function(){
             var url = window.location.href;
-            var pos = url.lastIndexOf("locate", 15);
-            var text = url.slice(pos-1);
-            // if (!(text.localeCompare("Home"))){
-                document.getElementById("daybutton").innerHTML = text;
-            // }     
-        },750)
+            var pos = url.lastIndexOf("#");
+            var text = url.slice(pos+1);
+            document.getElementById("daybutton").innerHTML = text;
+            if(text.length>2){
+                document.getElementById("daybutton").style.fontSize = "2vh"
+                document.getElementById("daybutton").style.padding = "2vh"
+            }
+            else{
+                document.getElementById("daybutton").style.fontSize = "3vh"
+                document.getElementById("daybutton").style.padding = "2vh"
+            }
+        },650)
     }
 });

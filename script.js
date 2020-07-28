@@ -52,8 +52,6 @@ if(hours<=1 || hours>=18){
     }
     document.body.style.backgroundImage = "url(BGn.jpg)";
     document.getElementsByTagName("meta")[0].content = "#0a6596";
-    document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(10, 100, 150, 1), rgba(27, 0, 100, 1))";
-    document.getElementById("daybutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(10, 100, 150, 1), rgba(27, 0, 100, 1))";
 }
 else if(hours<=19 && hours>=13){
     for (var i = 1; i<length; i++){
@@ -61,12 +59,10 @@ else if(hours<=19 && hours>=13){
     }
     for(var i = 0; i<butn; i++)
     {
-        buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1)))";
+        buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1))";
     }
     document.body.style.backgroundImage = "url(BGm.jpg)";
     document.getElementsByTagName("meta")[0].content = "#4ab7ff";
-    document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1))";
-    document.getElementById("daybutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1))";
 }
 else if(hours<=12 && hours>=8){
     for (var i = 1; i<length; i++){
@@ -78,8 +74,6 @@ else if(hours<=12 && hours>=8){
     }
     document.body.style.backgroundImage = "url(BGa.jpg)";
     document.getElementsByTagName("meta")[0].content = "#ffd622";
-    document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 1), rgba(255, 214, 34, 1))";
-    document.getElementById("daybutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 1), rgba(255, 214, 34, 1))";
 }
 else{
     for (var i = 1; i<length; i++){
@@ -91,8 +85,6 @@ else{
     }
     document.body.style.backgroundImage = "url(BGe.jpg";
     document.getElementsByTagName("meta")[0].content = "#6221db";
-    document.getElementById("playbutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 1), rgba(221, 27, 179, 1))";
-    document.getElementById("daybutton").style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 1), rgba(221, 27, 179, 1))";
 }
 
 // document.getElementsByClassName("section")[1].style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 0.8), rgba(221, 27, 179, 0.712))";

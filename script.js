@@ -161,6 +161,20 @@ var myFullpage = new fullpage('#fullpage', {
         if (origin>1){
             document.getElementsByClassName("fa-pause")[0].className = "fas fa-play";
         }
+        // if (origin==0){
+        //     var elem = document.getElementById("daybutton");   
+        //     var pos = 3;
+        //     var id = setInterval(frame, 10);
+        //     function frame() {
+        //         if (pos == 50) {
+        //             clearInterval(id);
+        //         } else {
+        //             pos++; 
+        //             elem.style.top = pos + 'vh'; 
+        //             // elem.style.left = pos + 'px'; 
+        //         }
+        //     }
+        // }
         setTimeout(function(){
             var url = window.location.href;
             var pos = url.lastIndexOf("#");
@@ -177,3 +191,7 @@ var myFullpage = new fullpage('#fullpage', {
         },650)
     }
 });
+
+function move() {
+    
+  }

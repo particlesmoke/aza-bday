@@ -147,8 +147,8 @@ p{
     background-color: black;
     z-index: 1;
     border-radius: 5vh;
-    left: 10vw;
-    top: 3vh;
+    left: calc( 50vw - 3vh);
+    top: 60vh;
     font-size: 3vh;
     padding: 2vh;
     font-family: countdown;

@@ -138,7 +138,7 @@ function closenav(){
         var pos = url.lastIndexOf("locate", 15);
         var text = url.slice(pos-1);
         // if (!(text.localeCompare("Home"))){
-            document.getElementById("daybutton").innerHTML = text;
+            // document.getElementById("daybutton").innerHTML = text;
         // }     
     },750)
     
@@ -161,20 +161,39 @@ var myFullpage = new fullpage('#fullpage', {
         if (origin>1){
             document.getElementsByClassName("fa-pause")[0].className = "fas fa-play";
         }
-        // if (origin==0){
-        //     var elem = document.getElementById("daybutton");   
-        //     var pos = 3;
-        //     var id = setInterval(frame, 10);
-        //     function frame() {
-        //         if (pos == 50) {
-        //             clearInterval(id);
-        //         } else {
-        //             pos++; 
-        //             elem.style.top = pos + 'vh'; 
-        //             // elem.style.left = pos + 'px'; 
-        //         }
-        //     }
-        // }
+        if (origin.index==0){
+            var elem = document.getElementById("daybutton");   
+            var topf = 60;
+            var leftf = 50;
+            var id = setInterval(frame, 5);
+            function frame() {
+                if (topf == 3) {
+                    clearInterval(id);
+                } else {
+                    topf--; 
+                    leftf = leftf- 0.6;
+                    elem.style.top = topf + 'vh'; 
+                    elem.style.left = 'calc(' + leftf + 'vw - 3vh)' ;
+                }
+            }
+        }
+        if (destination.index==0){
+            var elem = document.getElementById("daybutton");   
+            var topf = 3;
+            var leftf = 15.8;
+            var id = setInterval(frame, 5);
+            function frame() {
+                if (topf == 60) {
+                    clearInterval(id);
+                } else {
+                    topf++; 
+                    leftf = leftf+ 0.6;
+                    elem.style.top = topf + 'vh'; 
+                    elem.style.left = 'calc(' + leftf + 'vw - 3vh)' ;
+                }
+            }
+        }
+        
         setTimeout(function(){
             var url = window.location.href;
             var pos = url.lastIndexOf("#");

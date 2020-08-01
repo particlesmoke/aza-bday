@@ -4,9 +4,6 @@ if(screen.width>=screen.height) {
     document.body.innerHTML = "<br><br><br><br><br><br><br><br><p style=\"color:black\">why still here, go open on your phone</p>";
 }
 
-window.onload = function() {
-    var gifs = Gifffer();
-}
 
 document.getElementById("count").innerHTML="!!!";
 
@@ -93,7 +90,7 @@ else{
 player = document.getElementsByClassName("player"); 
 function playmusic(x)  
 {  
-    x=x-11;
+    x=x-10;
     if (player[x].paused)
     {
         player[x].play();  
@@ -152,7 +149,7 @@ player.onpause = function(){
 
 
 var myFullpage = new fullpage('#fullpage', {
-    anchors: ['Home','3', '4', '5', '6', '7', '8', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
+    anchors: ['Home','2','3', '4', '5', '6', '7', '8', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
     normalScrollElements : '.scroll',
     loopHorizontal: false,
     continuousHorizontal: true,

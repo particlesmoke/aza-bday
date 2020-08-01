@@ -17,10 +17,11 @@
 
     </head>
     <body>
-        <div id="daybutton" class="button" onclick="opennav()">3</div>
+        <div id="daybutton" class="button" onclick="opennav()">2</div>
         <div id="navpage"> <i class="fas fa-times" onclick="closenav()" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
             <div id="nav" class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
                 <a href="#Home" class="link" onclick="closenav()" style="border: none;"> Home </a>
+                <a href="#2" class="link" onclick="closenav()"> 2 </a>
                 <a href="#3" class="link" onclick="closenav()"> 3 </a>
                 <a href="#4" class="link" onclick="closenav()"> 4 </a>
                 <a href="#5" class="link" onclick="closenav()"> 5 </a>
@@ -45,14 +46,118 @@
         <div class="cover">
             <p id="count">!!!</p>
             <a href="#page2" class="links"></a><i class="fas fa-arrow-circle-down" style="color: rgb(255, 207, 117);"></i></a> <br><br> <br><br><br>
-            <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black; position:absolute; bottom: 9vh; width: 70vw;"> Tooo much rain! 🌧⛈☔</p>
+            <p style="color: rgb(255, 207, 117); text-shadow: 1px 1px 4px black; position:absolute; bottom: 9vh; width: 70vw;"> God has adjusted the knob to Rimjhim now 🌧</p>
         </div>
         <div id="fullpage">
             <div class="section active"></div>
+            <div class="section bgc" id="2d">
+                <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
+                <div class="slide">
+                    <div id="lyricspage5" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(2)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+                        <h1 style="margin-top: -10vh;">Lyrics</h1>
+                        <div class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
+                            <p> 
+                                How many times can I tell you <br>
+                                You're lovely just the way you are<br>
+                                Don't let the world come and change you<br>
+                                Don't let life break your heart<br>
+                                Don't put on their mask, don't wear their disguise<br><br>
+                                Don't let them dim the light that shines in your eyes<br>
+                                If only you could love yourself the way that I love you<br>
+                                How many times can I say<br><br>
+                                You don't have to change a thing<br>
+                                Don't let the tide wash you away<br>
+                                Don't let worry ever clip your wings<br>
+                                Discard what is fake, keep what is real<br><br>
+                                Pursue what you love, embrace how you feel<br>
+                                If only you could love yourself the way that I love you<br>
+                                And if you ever choose a road that leads nowhere<br><br>
+                                All alone and you can't see right from wrong<br>
+                                And if you ever lose yourself out there<br>
+                                Come on home and I'll sing you this song<br><br>
+                                So how many times can I tell you<br>
+                                You're lovely just the way you are<br>
+                                Don't let the world come and change you<br>
+                                Don't let life break your heart<br>
+                            </p>
+                        </div>
+                    </div>
+                    <h1 style="top: 0vh; position: absolute; width: 92vw; font-size: 2.5vh;">How many times</h1>
+                    <div style="width: 80vw; margin-left: 8vw; padding: 2vw; position:absolute; bottom: 48vh;">
+                        <img src="./2D/orionsirius.png" style="width: 100%;">
+                    </div>
+                    <audio class="player" id="player3" preload="auto" data-autoplay>
+                        <source src="./2D/Audio.mp3" type="audio/mpeg">
+                    </audio>
+                    <div id="playbutton" class="button" onclick="playmusic(10)"><i id="button5" class="fas fa-play"></i></div>
+                    <div id="lyricbutton" class="button" onclick="openlyric(2)"><i id="lyric" class="fas fa-align-left"></i></div>
+                    <div class="scroll" style="margin-top: 5vh; height: 25vh; overflow-y: scroll; position: absolute; bottom: 15vh; width: 100vw;">
+                        <p>❣</p>
+                        <p>Every word in the song, I speak for you. And especially the last two lines, on which I cannot stress enough.</p>
+                        <p>I know I failed yesterday, and many times before, but I vow to try and be better.</p>
+                        <p>That's what life is about isn't it? Getting better for things you care about.</p>
+                    </div>
+                    <br><br>
+                    <hr style="border: 3px solid white; position: absolute; bottom: 12vh; width: 100vw;">
+                    <p style="font-size: 1.8vh; position: absolute; bottom: 5vh; width: 70vw; "> Orion and Sirius <br> Your site will load a lot slower today, give it time to breathe. </p>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <img src="./2D/open.png" style="position: absolute; right: 60vw; top: 13vh; height: 6vh;">
+                        <div class="scroll" style="margin-top: 20vh; height: 60vh; overflow-y: scroll; scrollbar-face-color: black; scrollbar-width: 2vw;"> 
+                            <img src="./2D/gifs/0.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(4deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Oh hi kiddo <br> I can see you there</p> 
+                            <p> I didn't really know what to do with the tongue</p>
+                            <img src="./2D/gifs/1.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(2deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Lemme play something for you... </p> 
+                            <p>Oh, I forgot gif doesn't support audio.</p>
+                            <img src="./2D/gifs/2-2.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(-3deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">How about some bhangda?</p> 
+                            <p>Oops... fell.. </p>
+                            <img src="./2D/gifs/2.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(1deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Let's give it another try</p> 
+                            <p>Oh no, not for me</p>
+                            <img src="./2D/gifs/3.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(5deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Maybe something more... contemporary</p> 
+                            <p>Finally, something worked out, impressed yet?</p>
+                            <img src="./2D/gifs/4.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(-2deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Just celebrating that perfect floss with a step I didn't practice at all</p> 
+
+                            <img src="./2D/gifs/5.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(-4deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Still celeberating</p> 
+
+                            <img src="./2D/gifs/6.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(0deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Aha, I am an inventor now</p> 
+
+                            <img src="./2D/gifs/8.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(3deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Wavy moves are my fav.</p> 
+
+                            <img src="./2D/gifs/7.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(-2deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Same move, more high on you.</p> 
+
+                            <img src="./2D/gifs/9.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(1deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Should insert some excersising too</p> 
+                            <p>I am such a great inventor</p>
+                            <img src="./2D/gifs/10.gif" style="width: 80vw; margin-top: 5vh; margin-left: 10vw; transform: rotate(-5deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Chika chika boom boom</p> 
+                            <p>And if my dance moves failed to impress you, here's my infallible charm.</p> <br> <br>
+                        </div>
+                        <img src="./2D/close.png" style="position: absolute; right: 5vw; bottom: 13vh; height: 6vh;">
+                    </div>
+                </div>  
+                <div class="slide">
+                    <div class="container">
+                        <a href="https://in.pinterest.com/pin/697776535991967328/"> 
+                        <img src="./2D/Post.jpg" style="width: 84vw; position: relative; left: 8vw; top: 15vh; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
+                        </a>
+                        <p style="position: absolute; bottom: 15vh; height: 15vh; width: 70vw; font-size: 2.5vh;"> 🧡💛💚💙💜 <br> <br>We are colorful humans </p>
+                    </div>
+                </div>
+            </div>
             <div class="section bgc" id="3d">
                 <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
                 <div class="slide">
-                    <div id="lyricspage5" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(3)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+                    <div id="lyricspage3" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(3)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
                         <h1 style="margin-top: -10vh;">Lyrics</h1>
                         <div class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
                             <p> 
@@ -113,21 +218,21 @@
                 </div>  
                 <div class="slide">
                     <div class="container">
-                        <img src="./3D/Look at us.png" style="position: absolute; right: 60vw; top: 13vh; height: 6vh;">
+                        <img data-src="./3D/Look at us.png" style="position: absolute; right: 60vw; top: 13vh; height: 6vh;">
                         <div class="scroll" style="margin-top: 20vh; height: 60vh; overflow-y: scroll; scrollbar-face-color: black; scrollbar-width: 2vw;"> 
                             <!-- <iframe style="margin-left: 10vw; width: 80vw; height: 45vw;" width="560" height="315" src="https://www.youtube.com/embed/9OB72GZOS4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
-                            <img src="./3D/Us.jpg" style="width: 80vw; margin-top: 10vh; margin-left: 10vw; transform: rotate(4deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
+                            <img data-src="./3D/Us.jpg" style="width: 80vw; margin-top: 10vh; margin-left: 10vw; transform: rotate(4deg); border: 12px solid white; box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);"  alt="">
                             <p style="background-color: rgba(255, 255, 255, 0.3); border-radius: 3vh;">Me and my everything</p> <br> <br> <br>
                             <!-- <p> You know how I know you are my everything? <br> <br> Coz when you are good, everything is good 😁, other troubles of the world seem small. Because what matters most to me is you. When you are good, I wake up happy, get more hungry, love my family more, get more done. You realise how important you are to me? </p> -->
                             <p> Are we just the cutest or do I need to get my eyes checked? <br> We are glowing ekdum... I think I can look okay occasionally. Or is just your beauty radiating off me?<br><br><br></p>
                         </div>
-                        <img src="./3D/Rose.png" style="position: absolute; right: 5vw; bottom: 13vh; height: 6vh;">
+                        <img data-src="./3D/Rose.png" style="position: absolute; right: 5vw; bottom: 13vh; height: 6vh;">
                     </div>
                 </div>  
                 <div class="slide">
                     <div class="container">
                         <a href="https://www.instagram.com/p/CC6BmlNjqQ6/?utm_source=ig_web_copy_link"> 
-                        <img src="./3D/Post.jpg" style="width: 84vw; position: relative; left: 8vw; top: 15vh; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
+                        <img data-src="./3D/Post.jpg" style="width: 84vw; position: relative; left: 8vw; top: 15vh; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
                         </a>
                         <p style="position: absolute; bottom: 15vh; height: 15vh; width: 70vw; font-size: 2.5vh;"> Return my Vital organ 🥺🥺 </p>
                     </div>
@@ -136,7 +241,7 @@
             <div class="section bgc" id="4d">
                 <!-- <p>Cleaning up the code so edits don't take so much time</p> -->
                 <div class="slide">
-                    <div id="lyricspage5" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(4)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
+                    <div id="lyricspage4" class="lyricspage"> <i class="fas fa-times" onclick="closelyric(4)" style="font-size: 4vh; padding: 5vh; color: gray;"></i>
                         <h1 style="margin-top: -10vh;">Lyrics</h1>
                         <div class="scroll" style="overflow-y: auto; width: 100%; position: absolute; height: 70%;">
                             <p> 

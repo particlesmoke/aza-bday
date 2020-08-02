@@ -65,8 +65,8 @@ p{
 
 #count{
     font-family: countdown;
-    margin-top: 50vh;
-    font-size: 5vh;
+    margin-top: 47vh;
+    font-size: 4vh;
     text-align: center;
     color: red;
     animation: flicker 1.5s infinite alternate; 

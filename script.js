@@ -58,7 +58,7 @@ else if(hours<=19 && hours>=13){
     {
         buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1))";
     }
-    document.body.style.backgroundImage = "url(BGm.jpg)";
+    document.body.style.backgroundImage = "url(BGmb.jpg)";
     document.getElementsByTagName("meta")[0].content = "#4ab7ff";
 }
 else if(hours<=12 && hours>=8){

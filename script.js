@@ -65,7 +65,7 @@ if(hours<=1 || hours>=18){
     for(var i = 0; i<5; i++){
         ages[i].style.color = "rgba(10, 100, 150, 1)";
     }
-    document.body.style.backgroundImage = "url(BGn.jpg)";
+    document.body.style.backgroundImage = "url(BGnb.jpg)";
     document.getElementsByTagName("meta")[0].content = "#0a6596";
 }
 else if(hours<=19 && hours>=13){
@@ -93,7 +93,7 @@ else if(hours<=12 && hours>=8){
     for(var i = 0; i<5; i++){
         ages[i].style.color = "rgba(42, 159, 144, 1)";
     }
-    document.body.style.backgroundImage = "url(BGa.jpg)";
+    document.body.style.backgroundImage = "url(BGab.jpg)";
     document.getElementsByTagName("meta")[0].content = "#ffd622";
 }
 else{
@@ -107,7 +107,7 @@ else{
     for(var i = 0; i<5; i++){
         ages[i].style.color = "rgba(98, 33, 219, 1)";
     }
-    document.body.style.backgroundImage = "url(BGe.jpg";
+    document.body.style.backgroundImage = "url(BGeb.jpg)";
     document.getElementsByTagName("meta")[0].content = "#6221db";
 }
 

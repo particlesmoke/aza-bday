@@ -30,7 +30,7 @@ setInterval(function(){
 
 
 
-    document.getElementById("count").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
     document.getElementsByClassName("age")[0].innerHTML = ayears;
     document.getElementsByClassName("age")[1].innerHTML = adays;
     document.getElementsByClassName("age")[2].innerHTML = ahours;
@@ -38,8 +38,10 @@ setInterval(function(){
     document.getElementsByClassName("age")[4].innerHTML = aseconds;
     
     if (distance < 0) {
-        clearInterval(x);
         document.getElementById("count").innerHTML = "Yayy! 20 now!";
+    }
+    else{
+        document.getElementById("count").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     }
 }, 1000);
 

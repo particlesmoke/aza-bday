@@ -58,6 +58,17 @@ p{
     /* overflow-y: scroll; */
 }
 
+.age{
+    font-size: 5vh;
+    font-family: countdown;
+    margin-bottom: -0.7em;
+    background-color: white;
+    width: 6vh;
+    height: 6vh;
+    padding:1vh;
+    margin-left: calc( 50vw - 4vh);
+}
+
 .scroll{
     -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     

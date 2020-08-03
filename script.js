@@ -22,7 +22,8 @@ setInterval(function(){
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    var adays = Math.floor(age / (1000 * 60 * 60 * 24));
+    var ayears = Math.floor((age / (1000 * 60 * 60 * 24 * 365.25 )));
+    var adays = Math.floor((age % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 *24));
     var ahours = Math.floor((age % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var aminutes = Math.floor((age % (1000 * 60 * 60)) / (1000 * 60));
     var aseconds = Math.floor((age % (1000 * 60)) / 1000);
@@ -30,10 +31,15 @@ setInterval(function(){
 
 
     document.getElementById("count").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
+    document.getElementsByClassName("age")[0].innerHTML = ayears;
+    document.getElementsByClassName("age")[1].innerHTML = adays;
+    document.getElementsByClassName("age")[2].innerHTML = ahours;
+    document.getElementsByClassName("age")[3].innerHTML = aminutes;
+    document.getElementsByClassName("age")[4].innerHTML = aseconds;
+    
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("count").innerHTML = "Yayyy!";
+        document.getElementById("count").innerHTML = "Yayy! 20 now!";
     }
 }, 1000);
 
@@ -44,6 +50,7 @@ var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
 var pages = document.getElementsByClassName("section");
 var buttons = document.getElementsByClassName("button");
+var ages = document.getElementsByClassName("age");
 var length = pages.length;
 var butn = buttons.length;
 
@@ -54,6 +61,9 @@ if(hours<=1 || hours>=18){
     for(var i = 0; i<butn; i++)
     {
         buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(10, 100, 150, 1), rgba(27, 0, 100, 1))";
+    }
+    for(var i = 0; i<5; i++){
+        ages[i].style.color = "rgba(10, 100, 150, 1)";
     }
     document.body.style.backgroundImage = "url(BGn.jpg)";
     document.getElementsByTagName("meta")[0].content = "#0a6596";
@@ -66,6 +76,9 @@ else if(hours<=19 && hours>=13){
     {
         buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(74, 183, 255, 1), rgba(255, 247, 129, 1))";
     }
+    for(var i = 0; i<5; i++){
+        ages[i].style.color = "rgba(74, 183, 255, 1)";
+    }
     document.body.style.backgroundImage = "url(BGmb.jpg)";
     document.getElementsByTagName("meta")[0].content = "#4ab7ff";
 }
@@ -77,6 +90,9 @@ else if(hours<=12 && hours>=8){
     {
         buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(42, 159, 144, 1), rgba(255, 214, 34, 1))";
     }
+    for(var i = 0; i<5; i++){
+        ages[i].style.color = "rgba(42, 159, 144, 1)";
+    }
     document.body.style.backgroundImage = "url(BGa.jpg)";
     document.getElementsByTagName("meta")[0].content = "#ffd622";
 }
@@ -87,6 +103,9 @@ else{
     for(var i = 0; i<butn; i++)
     {
         buttons[i].style.backgroundImage = "linear-gradient(to bottom right, rgba(98, 33, 219, 1), rgba(221, 27, 179, 1))";
+    }
+    for(var i = 0; i<5; i++){
+        ages[i].style.color = "rgba(98, 33, 219, 1)";
     }
     document.body.style.backgroundImage = "url(BGe.jpg";
     document.getElementsByTagName("meta")[0].content = "#6221db";

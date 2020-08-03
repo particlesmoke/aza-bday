@@ -10,16 +10,24 @@ document.getElementById("count").innerHTML="!!!";
 
 setInterval(function(){
 
-    var countDownDate = new Date("Aug 4, 2020 00:00:00").getTime();
-
+    var bday = new Date("Aug 4, 2020 00:00:00").getTime();
+    var ogbday = new Date("Aug 4, 2000 21:37:30").getTime();
     var now = new Date().getTime();
 
-    var distance = countDownDate - now;
+    var distance = bday - now;
+    var age = now - ogbday;
 
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    var adays = Math.floor(age / (1000 * 60 * 60 * 24));
+    var ahours = Math.floor((age % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var aminutes = Math.floor((age % (1000 * 60 * 60)) / (1000 * 60));
+    var aseconds = Math.floor((age % (1000 * 60)) / 1000);
+
+
 
     document.getElementById("count").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
@@ -90,7 +98,7 @@ else{
 player = document.getElementsByClassName("player"); 
 function playmusic(x)  
 {  
-    x=x-9;
+    x=x-8;
     if (player[x].paused)
     {
         player[x].play();  
@@ -149,7 +157,7 @@ player.onpause = function(){
 
 
 var myFullpage = new fullpage('#fullpage', {
-    anchors: ['Home','1','2','3', '4', '5', '6', '7', '8', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
+    anchors: ['Home','0','1','2','3', '4', '5', '6', '7', '8', '9', '10', '12', '13', '21','22','23','24','25','26','27','28'],
     normalScrollElements : '.scroll',
     loopHorizontal: false,
     continuousHorizontal: true,

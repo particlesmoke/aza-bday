@@ -10,7 +10,7 @@ document.getElementById("count").innerHTML="!!!";
 
 setInterval(function(){
 
-    var bday = new Date("Aug 4, 2020 00:00:00").getTime();
+    var bday = new Date("Aug 4, 2021 00:00:00").getTime();
     var ogbday = new Date("Aug 4, 2000 21:37:30").getTime();
     var now = new Date().getTime();
 

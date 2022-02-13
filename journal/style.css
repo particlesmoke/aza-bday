@@ -1,0 +1,12 @@
+body{
+    background-image: url('./IMG_20211225_191843.jpg');
+    background-size: 80vh;
+    height: 100vh;
+    background-position: top;
+    background-attachment: fixed;
+}
+#main{
+    background-color: white;
+    min-height: 200px;
+    margin-top: 100vh;
+}

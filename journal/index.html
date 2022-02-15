@@ -7,7 +7,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Our journal</title>
 </head>
+<template id="postTemplate">
+    <div class="post">
+        <p class="date">22-02-2022</p>
+        <p class="time">06:53:01</p>
+        <p class="authorName">~Aza</p>
+        <p class="contents"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed natus non ipsam illum iure. Officia blanditiis facilis sequi autem nam. Adipisci enim architecto nesciunt at, facilis laborum autem culpa officiis.</p>
+    </div>
+</template>
 <body>
-    <div id="main"></div>
+    <div id="main">
+        <div id="inputDiv">
+            <form id="inputForm">
+                <input type="text" name="contents" id="contentsInput">
+                <select name="author" id="authorInput">
+                    <option value="R">Aza</option>
+                    <option value="J">Jayesh</option>
+                </select>
+                <button onclick="post()" type="button" >Post!</button>
+            </form>
+        </div>
+        <div id="postsDiv">
+            <div class="post">
+                <p class="date">22-02-2022</p>
+                <p class="time">06:53:01</p>
+                <p class="authorName">~Aza</p>
+                <p class="contents"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed natus non ipsam illum iure. Officia blanditiis facilis sequi autem nam. Adipisci enim architecto nesciunt at, facilis laborum autem culpa officiis.</p>
+            </div>
+        </div>
+        <button onclick="appendNext()">Add template</button>
+    </div>
 </body>
+<script src="./script.js"></script>
 </html>

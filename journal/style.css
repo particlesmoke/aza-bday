@@ -6,7 +6,31 @@ body{
     background-attachment: fixed;
 }
 #main{
+    /* background-color: rgba(0, 0, 0, 0.5); */
     background-color: white;
+    width: 100vw;
+    margin-left: 0;
     min-height: 200px;
     margin-top: 100vh;
+}
+#inputDiv{
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+#contentsInput{
+    width: 80wv;
+}
+.post{
+    width: 90%;
+    margin-top: 2vh;
+    margin-left: 3%;
+    padding: 1vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 5px 5px 5px 5px;
 }

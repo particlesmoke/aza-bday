@@ -16,15 +16,28 @@
 }
 
 body{
-    background-image: url('./bg.jpg');
-    background-size: 80vh;
+    /* background-image: url('./bg.jpg'); */
+    /* background-size: 80vh; */
     height: 100vh;
     margin: 0;
-    background-position: bottom;
-    background-attachment: fixed;
+    /* background-position: bottom;
+    background-attachment: fixed; */
     font-family: handwritten1;
     color: white;
 }
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    /* top: 0; */
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    background: url(./bg.jpg) no-repeat center bottom;
+    background-size: cover;
+  }
 #splash{
     /* background-color: red; */
     height: 100vh;
@@ -39,7 +52,7 @@ body{
 #splashHeading{
     font-family: serif1;
     font-size: 30pt;
-    margin-top: 12vh;
+    margin-top: 14vh;
     /* margin-left: 3.5vh; */
     width: 60%;
     text-align: center;
@@ -48,7 +61,7 @@ body{
     border-bottom: 4px rgba(227,99,99,1)  solid;
 }
 #splashSubHeading{
-    margin-top: 55vh;
+    margin-top: 45vh;
     font-family: 'Courier New', Courier, monospace;
     width: 60%;
     text-align: center;

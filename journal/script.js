@@ -20,6 +20,7 @@ window.onload = ()=>{
 const checkScrollandAdd = ()=>{
     console.log(postsDiv.offsetTop + postsDiv.offsetHeight - window.scrollY - window.innerHeight)
     if(postsDiv.offsetTop + postsDiv.offsetHeight - window.scrollY - window.innerHeight < 0){
+        document.querySelector('.heartLoader').style.opacity = '1'
         getNextEntry()
     }
 }

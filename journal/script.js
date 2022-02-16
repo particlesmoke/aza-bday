@@ -24,8 +24,8 @@ const checkScrollandAdd = ()=>{
     }
 }
 function getNextEntry(){
-    document.removeEventListener('scroll', checkScrollandAdd)
     if(!nextEntrySno) return
+    document.removeEventListener('scroll', checkScrollandAdd)
     fetch(`https://boiling-everglades-42596.herokuapp.com/entries/${nextEntrySno}`).then(res=>{return  res.json()}).then(latestEntry=>{
         appendNext(latestEntry.datetime, latestEntry.contents, latestEntry.author)
         document.addEventListener('scroll',checkScrollandAdd)

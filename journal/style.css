@@ -10,6 +10,11 @@
     font-family: handwritten3;
     src: url(./fonts/Creattion\ Demo.otf);
 }
+@font-face {
+    font-family: serif1;
+    src: url(./fonts/MADE\ Sunflower\ PERSONAL\ USE.otf);
+}
+
 body{
     background-image: url('./IMG_20211225_191843.jpg');
     background-size: 80vh;
@@ -19,11 +24,22 @@ body{
     background-attachment: fixed;
     font-family: handwritten1;
 }
-/* #splash{
-    background-color: red;
-    height: 50vh;
+#splash{
+    /* background-color: red; */
+    height: 100vh;
+    margin-top: -100vh;
+    width: 100vw;
     position: absolute;
-} */
+}
+#splashHeading{
+    font-family: serif1;
+    color: white;
+    font-size: 30pt;
+    margin-left: 30pt;
+    margin-top: 25vh;
+    text-align: center;
+}
+
 #main{
     background-color: rgba(0, 0, 0, 0.5);
     /* background-color: white; */
@@ -102,6 +118,9 @@ p{
     margin-top: 15pt;
     margin-bottom: 15pt;
     font-family: handwritten2;
+}
+.contents::first-letter{
+    font-size: 50pt;
 }
 .mauve{
     background: rgb(106,41,151);

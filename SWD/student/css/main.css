@@ -43,7 +43,7 @@ a:hover{
 	display:none;
 }
 .headerWrapper{
-	background: url("../images/headerBg.gif") no-repeat scroll right top transparent;
+	background: url("../Images/headerBg.gif") no-repeat scroll right top transparent;
     height: 167px;
     min-width: 960px;
 }
